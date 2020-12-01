@@ -24,7 +24,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    strategy:
+    needs: build
       - uses: actions/upload-artifact@master
         with:
           name: webpack artifacts
